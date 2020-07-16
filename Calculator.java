@@ -375,10 +375,10 @@ public class Calculator {
 		ResultButton.setBounds(362, 346, 73, 52);
 		frame.getContentPane().add(ResultButton);
 		
-		JButton Bac2Button = new JButton("X^2");
-		Bac2Button.setBackground(new Color(222, 184, 135));
-		Bac2Button.setForeground(new Color(0, 0, 0));
-		Bac2Button.addActionListener(new ActionListener() {
+		JButton SquaredButton = new JButton("X^2");
+		SquaredButton.setBackground(new Color(222, 184, 135));
+		SquaredButton.setForeground(new Color(0, 0, 0));
+		SquaredButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				double ops = Double.parseDouble(String.valueOf(textField.getText()));
 				ops = (ops* ops);
@@ -386,9 +386,9 @@ public class Calculator {
 			}
 			
 		});
-		Bac2Button.setFont(new Font("Tahoma", Font.BOLD, 18));
-		Bac2Button.setBounds(279, 94, 73, 52);
-		frame.getContentPane().add(Bac2Button);
+		SquaredButton.setFont(new Font("Tahoma", Font.BOLD, 18));
+		SquaredButton.setBounds(279, 94, 73, 52);
+		frame.getContentPane().add(SquaredButton);
 		
 		JButton ModButton = new JButton("Mod");
 		ModButton.addActionListener(new ActionListener() {
@@ -502,18 +502,18 @@ public class Calculator {
 		TanButton.setBounds(10, 283, 73, 52);
 		frame.getContentPane().add(TanButton);
 		
-		JButton PitButton = new JButton("\u03C0");
-		PitButton.setBackground(new Color(192, 192, 192));
-		PitButton.setForeground(Color.BLACK);
-		PitButton.addActionListener(new ActionListener() {
+		JButton PItButton = new JButton("\u03C0");
+		PItButton.setBackground(new Color(192, 192, 192));
+		PItButton.setForeground(Color.BLACK);
+		PItButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				double ops;
 				ops = Math.PI;
 				textField.setText(String.valueOf(ops));
 			}
 		});
-		PitButton.setFont(new Font("Tahoma", Font.BOLD, 19));
-		PitButton.setBounds(10, 345, 73, 52);
-		frame.getContentPane().add(PitButton);
+		PItButton.setFont(new Font("Tahoma", Font.BOLD, 19));
+		PItButton.setBounds(10, 345, 73, 52);
+		frame.getContentPane().add(PItButton);
 	}
 }
